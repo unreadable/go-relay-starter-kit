@@ -1,0 +1,192 @@
+{
+    "data": {
+        "__schema": {
+            "directives": [
+                {
+                    "args": [
+                        {
+                            "defaultValue": null,
+                            "description": "The condition value",
+                            "name": "if",
+                            "type": {
+                                "kind": "NON_NULL",
+                                "name": null,
+                                "ofType": {
+                                    "kind": "SCALAR",
+                                    "name": "Boolean",
+                                    "ofType": null
+                                }
+                            }
+                        }
+                    ],
+                    "description": "Conditionally exclude a field or fragment during execution",
+                    "name": "skip",
+                    "onField": true,
+                    "onFragment": true,
+                    "onOperation": false
+                },
+                {
+                    "args": [
+                        {
+                            "defaultValue": null,
+                            "description": "The condition value",
+                            "name": "if",
+                            "type": {
+                                "kind": "NON_NULL",
+                                "name": null,
+                                "ofType": {
+                                    "kind": "SCALAR",
+                                    "name": "Boolean",
+                                    "ofType": null
+                                }
+                            }
+                        }
+                    ],
+                    "description": "Conditionally include a field or fragment during execution",
+                    "name": "include",
+                    "onField": true,
+                    "onFragment": true,
+                    "onOperation": false
+                }
+            ],
+            "mutationType": null,
+            "queryType": {
+                "name": "Query"
+            },
+            "types": [
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": null,
+                    "inputFields": null,
+                    "interfaces": null,
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "possibleTypes": null
+                },
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": [
+                        {
+                            "args": [],
+                            "deprecationReason": null,
+                            "description": null,
+                            "isDeprecated": false,
+                            "name": "greetings",
+                            "type": {
+                                "kind": "OBJECT",
+                                "name": "Greetings",
+                                "ofType": null
+                            }
+                        },
+                        {
+                            "args": [],
+                            "deprecationReason": null,
+                            "description": "The GraphQL type name",
+                            "isDeprecated": false,
+                            "name": "__typename",
+                            "type": {
+                                "kind": "NON_NULL",
+                                "name": null,
+                                "ofType": {
+                                    "kind": "SCALAR",
+                                    "name": "String",
+                                    "ofType": null
+                                }
+                            }
+                        }
+                    ],
+                    "inputFields": null,
+                    "interfaces": [],
+                    "kind": "OBJECT",
+                    "name": "Query",
+                    "possibleTypes": null
+                },
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": null,
+                    "inputFields": null,
+                    "interfaces": null,
+                    "kind": "SCALAR",
+                    "name": "Boolean",
+                    "possibleTypes": null
+                },
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": null,
+                    "inputFields": null,
+                    "interfaces": null,
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "possibleTypes": null
+                },
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": null,
+                    "inputFields": null,
+                    "interfaces": null,
+                    "kind": "SCALAR",
+                    "name": "Float",
+                    "possibleTypes": null
+                },
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": [
+                        {
+                            "args": [],
+                            "deprecationReason": null,
+                            "description": null,
+                            "isDeprecated": false,
+                            "name": "hello",
+                            "type": {
+                                "kind": "NON_NULL",
+                                "name": null,
+                                "ofType": {
+                                    "kind": "SCALAR",
+                                    "name": "String",
+                                    "ofType": null
+                                }
+                            }
+                        },
+                        {
+                            "args": [],
+                            "deprecationReason": null,
+                            "description": "The GraphQL type name",
+                            "isDeprecated": false,
+                            "name": "__typename",
+                            "type": {
+                                "kind": "NON_NULL",
+                                "name": null,
+                                "ofType": {
+                                    "kind": "SCALAR",
+                                    "name": "String",
+                                    "ofType": null
+                                }
+                            }
+                        }
+                    ],
+                    "inputFields": null,
+                    "interfaces": [],
+                    "kind": "OBJECT",
+                    "name": "Greetings",
+                    "possibleTypes": null
+                },
+                {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": null,
+                    "inputFields": null,
+                    "interfaces": null,
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "possibleTypes": null
+                }
+            ]
+        }
+    }
+}
