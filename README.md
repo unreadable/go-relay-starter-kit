@@ -7,8 +7,8 @@ This kit includes:
 For a walkthrough, see the [Relay tutorial](https://facebook.github.io/relay/docs/tutorial.html).
 
 ### Notes:
-This is based on alpha version of `graphql-go` and `graphql-relay-go`. 
-Be sure to watch both repositories for latest changes.
+This is based on `playlyfe/graphql` implementation but it can be customized for other implementation as well. 
+Be sure to watch the repository for future changes!
 
 ## Installation
 
@@ -29,10 +29,7 @@ Start a local server:
 npm start
 ```
 
-The above command will run both the NodeJS app server and Golang GraphQL server concurrently.
-
-- Golang GraphQL server will be running at http://localhost:8080/graphql
-- NodeJS app server will be running at http://localhost:3000
+The above command will run both the go-graphql server and will display a simple `Hello world!`based on the API.
 
 ## Developing
 
@@ -43,9 +40,10 @@ automatically rebuild the app and refresh your browser.
 ### Golang
 
 #### Schema data
-Since Golang does not support loading package / module dynamically, remember to update the package import for schema data in:
+The Schema and Resolvers should be kept in `data/graphql.go`.
+Since Golang does not support loading package / module dynamically, after updating the `data/graphql.go` file, make sure to update the schema:
 - `graphql.go`
-- `scripts/updateSchema.go`
+- `utils/updateSchema.go`
 
 For e.g
 
@@ -57,8 +55,8 @@ import (
 ```
 
 #### Schema updates
-If at any time you make changes to `data/schema.go`, stop the server,
-regenerate `data/schema.json`, and restart the server:
+If at any time you make changes to `data/graphql.go`, stop the server,
+rebuild `data/schema.json` and restart the server:
 
 ```
 npm run update-schema
@@ -68,15 +66,12 @@ npm start
 `schema.json` is needed by the JS code for `./build/babelRelayPlugin.js`
 
 ## Examples
-- [todomvc-relay-go](https://github.com/sogko/todomvc-relay-go) - Port of the React/Relay TodoMVC app, driven by a Golang GraphQL backend
+This starter kit provides a simple go-graphql API that displays "Hello world!"
 
 Feel free to submit a PR to add to this list.
 
 ## TODOs
-- [x] Swap out `express-graphql` server with a Golang GraphQL server
-- [x] GraphQL schema definition in Golang
-- [x] Generate `schema.json` from schema definition for `babel-relay-plugin`
-- [ ] Generate `schema.graphql` from schema definition
+- [ ] Make it production-ready
 
 ## Credits
 This kit is build on top of https://github.com/relayjs/relay-starter-kit
