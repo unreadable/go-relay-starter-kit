@@ -55,7 +55,7 @@ npm run update-schema
 npm start
 ```
 
-`schema.json` is needed by the JS code for `./build/babelRelayPlugin.js`
+`schema.json` is needed by the JS code for `./utils/babelRelayPlugin.js`
 
 ## Examples
 This starter kit provides a simple go-graphql API that displays "Hello world!"
