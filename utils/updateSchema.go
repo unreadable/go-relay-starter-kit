@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"io/ioutil"
-	"learn/data"
+	"go-relay-starter-kit/data"
 
 	"os"
 
