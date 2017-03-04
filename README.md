@@ -45,14 +45,6 @@ Since Golang does not support loading package / module dynamically, after updati
 - `graphql.go`
 - `utils/updateSchema.go`
 
-For e.g
-
-```go
-import (
-  ...
-  "github.com/sogko/golang-relay-starter-kit/data" // <--- update to package containing schema
-)
-```
 
 #### Schema updates
 If at any time you make changes to `data/graphql.go`, stop the server,
