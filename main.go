@@ -1,7 +1,7 @@
 package main
 
 import (
-	"learn/data"
+	"go-relay-starter-kit/data"
 	"net/http"
 
 	"github.com/krypton97/GraphiQL"
