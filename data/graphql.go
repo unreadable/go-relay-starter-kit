@@ -4,12 +4,12 @@ import "github.com/playlyfe/go-graphql"
 
 var Schema = `
         type Query {
-			greetings: Greetings
-		}
+		greetings: Greetings
+	}
 
-		type Greetings {
-			hello: String!
-		}
+	type Greetings {
+		hello: String!
+	}
     `
 
 var Resolvers = map[string]interface{}{
