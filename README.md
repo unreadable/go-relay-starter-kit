@@ -34,7 +34,7 @@ The above command will run both the go-graphql server and will display a simple 
 ## Developing
 
 ### JavaScript
-Any changes you make to files in the `js/` directory will cause the server to
+Any changes you make to files in the `src/` directory will cause the server to
 automatically rebuild the app and refresh your browser.
 
 ### Golang
