@@ -63,7 +63,7 @@ This starter kit provides a simple go-graphql API that displays "Hello world!"
 Feel free to submit a PR to add to this list.
 
 ## TODOs
-- [x] Make it production-ready
+- [ ] Make it production-ready
 - [ ] Check Modern Relay compatibility
 
 ## Credits
